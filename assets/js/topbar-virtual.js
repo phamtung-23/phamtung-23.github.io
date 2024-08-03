@@ -178,7 +178,7 @@ $(document).ready(function() {
   });
   
   $('#change-page').on('change', function() {
-    var url = $(this).val() + '.html';
+    var url =  '../' +$(this).val() + '.html';
 
     if ($(this).val() !== "index") {
       url = '/html/'+ $(this).val() + '.html';
