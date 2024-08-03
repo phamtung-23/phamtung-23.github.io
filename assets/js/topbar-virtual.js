@@ -179,6 +179,10 @@ $(document).ready(function() {
   
   $('#change-page').on('change', function() {
     var url = $(this).val() + '.html';
+
+    if ($(this).val() !== "index") {
+      url = '/html/'+ $(this).val() + '.html';
+    }
     
     if($(this).val()) {
       window.location.assign(url);
